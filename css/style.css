@@ -1,0 +1,72 @@
+/* Hoja de estilo en cascada
+selector{
+    propiedad: valor;
+    propiedad: valor;
+}
+
+vamos a ver 3 selectores
+selector de etiqueta
+nombreDeEtiqueraDeHtml{
+    propiedad: valor;
+    propiedad: valor;
+}
+EJEMPLOS:
+body{
+    background-color: green;
+}
+header{
+    background-color:purple;
+}
+
+
+selectorDeClass{
+    propiedad: valor;
+    propiedad: valor;
+}
+
+EJEMPLO
+.colorFondoPrincipal{
+    background-color: green;
+}
+
+selector de ID{
+    propiedad: valor;
+    propiedad: valor;
+}
+EJEMPLO
+#seccionNoticias{
+    background-color: green;
+}
+Nivel de importacia: ID-Clase-Etiqueta
+
+selectorUniversal{
+    propiedad: valor;
+    propiedad: valor;
+}
+EJEMPLO
+*{
+    margin: 0;
+    padding: 0;
+    box-sozing: border-box;
+}
+
+Flexbox sirve para componentes pequeños. Ej: header, main, aside,footer
+
+Grid sirve para todo el diseño de la pagina. Log out
+
+Padding: Margen entre el contenido y el borde de la caja
+Margin: Espacio entre los elementos y lo que hay alrededor de estos
+
+
+<header>
+</header>
+    <nav>
+        Navegacion
+    </nav>
+
+
+Cuando tenga poco contenido, es recomendable usar
+height: 100 vh
+
+*/
+
