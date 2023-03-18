@@ -69,7 +69,18 @@ Cuando tenga poco contenido, es recomendable usar
 height: 100 vh
 
 */
-git init saber inicializar en git */
+/* git init 
+saber inicializar en git */
 /* git checkout Master
                 PreEntrega2Andolcetti
 Cambiar entre proyectos */
+/* git log
+me indica todas las modificaciones */
+/* git commit -m "le doy un titulo ej:modificacion tal..." */
+/* git status 
+Nos da un status de todas las posibles modificaciones */
+/* git add . 
+Pasar al staged area*/
+
+/* git branch
+Nos dice donde estamos parados y cuantas "ramas" existen */
