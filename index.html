@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- initial-scale, me indica que un px es igual para una pc como una tablet o mobile  -->
     <title>TerapiAnimal</title>
-        <!--favicon-->
+    <!--favicon-->
     <link rel="shotcut icon" href="./favicon.ico" type="image/x-icon">
+    <!-- BootStrap --><!--Siempre va antes de cualquier estilo-->
+    <!-- link para trabjar directo con el servidor -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <!-- link para trabajar con archivos dentro de "nuestro servidor" -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet"> 
         <!--estilos-->
     <link rel="stylesheet" href="./css/estilos.css">
     <!-- <link rel="stylesheet" href="./css/all.min.css">
@@ -20,8 +25,6 @@
     <link rel="stylesheet" href="./css/v4-shims.min.css">
     <link rel="stylesheet" href="./css/v5-font-face.min.css"> -->
     <script src="https://kit.fontawesome.com/9ef6259fa0.js" crossorigin="anonymous"></script>
-
-
 </head>
 <body>
     <header class = "Header">
@@ -45,7 +48,7 @@
                     <a class="linkNav" href="#">Inicio</a>
                 </li>
                 <li>
-                    <a class="linkNav" href="./pages/galeria.html" >Galeria </a>
+                    <a class="linkNav" href="./pages/galeria.html" >Galería </a>
                 </li>
                 <li>
                     <a class="linkNav" href="./pages/terapia.html">Terapias </a>
@@ -62,19 +65,19 @@
     <main class="Main">
         <div class="miembros">
             <div class="miembro">
-                <img src="./assets/Imagen/Perro.jpg" alt="Perro">Perrito
+                <img href="./pages/galeria.html" src="./assets/Imagen/Perro.jpg" alt="Perro">Perrito
             </div>
             <div class="miembro">
-                <img src="./assets/Imagen/gato.avif" alt="Gato">Gato
+                <img href="./pages/galeria.html" src="./assets/Imagen/gato.avif" alt="Gato">Diana
             </div>
             <div class="miembro">
-                <img src="./assets/Imagen/vaca.jpg" alt="Vaca">Vaca
+                <img href="./pages/galeria.html" src="./assets/Imagen/vaca.jpg" alt="Vaca">Vaca
             </div>
             <div class="miembro">
-                <img src="./assets/Imagen/carpincho.jpg" alt="Carpincho">Carpincho
+                <img href="./pages/galeria.html" src="./assets/Imagen/carpincho.jpg" alt="Carpincho">Carpi
             </div>
             <div class="miembro">
-                <img src="./assets/Imagen/llama.jpg" alt="Llama">-->Llama
+                <img href="./pages/galeria.html" src="./assets/Imagen/llama.jpg" alt="Llama">Cusco
             </div>
         </div>
     </main>
@@ -88,10 +91,33 @@
             <header>
             </header>
             <main class="tipografia1">
-                <h2></h2>
-                <p>Son numerosos los estudios que revelan la importancia y los beneficios de los animales en tratamientos de múltiples enfermedades.</p>
+                <br>
+                <h2>Terapia con animales: ¿Qué es?</h2>
+                <br>
+                <p class="tipografiaParrafo">&emsp;La terapia con animales ha conseguido buenos resultados con un gran número de pacientes. De hecho, numerosos estudios demuestran que tener perros reduce la ansiedad. La terapia con mascotas cada vez gana más adeptos: te contamos en qué consiste y cómo funciona.
+                Si te interesa este ámbito y quieres colaborar en la difusión de este tipo de terapias, puedes profundizar más, contactanos y sacate todas las dudas que tengas.
+                </p>
+                <br>
+                <h3>¿En qué consiste la terapia con animales?</h3>
+                <br>
+                <p class="tipografiaParrafo">&emsp; La terapia con animales es una intervención que incorpora a los animales para potenciar el bienestar y la salud de las personas en función de sus necesidades. El objetivo suele encararse hacia la mejora de las funciones físicas, cognitivas, emocionales y sociales de quienes se benefician de este tipo de tratamiento.
+                Los campos de aplicación de esta terapia son múltiples. Y es que la presencia de animales reduce el estrés y la ansiedad a nivel general y, además, tiene numerosos beneficios para personas o colectivos con necesidades especiales. Es el caso de personas en riesgo de exclusión social, enfermos de salud mental o incluso jóvenes en centros penitenciarios.</p>
+                    
+                <br>
+                <h3>Tipos de terapia animal</h3>
+                <br>
+                <p class="tipografiaParrafo">&emsp;Como hemos comentado anteriormente, estos tratamientos han resultado muy efectivos en personas con necesidades diferentes. En este sentido, la terapia con animales para la ansiedad y la terapia con animales para la depresión han demostrado su efectividad por la suma de beneficios que aportan, como veremos más adelante.
+                En función del nivel de exposición y de las necesidades de cada persona, podemos distinguir 3 tipos de terapias con animales.</p>
+                <br>
+                <h4 href="./pages/terapia.html">&emsp;&emsp;&emsp;Terapias asistidas con animales</h4>
+                <br>
+                <h4 href="./pages/terapia.html">&emsp;&emsp;&emsp;Actividades asistidas con animales</h4>
+                <br>
+                <h4 href="./pages/terapia.html">&emsp;&emsp;&emsp;Educación asistida con animales</h4>
+                <br>
+                <!-- <p>Son numerosos los estudios que revelan la importancia y los beneficios de los animales en tratamientos de múltiples enfermedades.</p>
                 <p>Son varios los estudios que demuestran su importancia para el tratamiento de diferentes trastornos. Los animales son beneficiosos para todos nosotros: nos dan cariño, nos ofrecen su interés, nos sentimos importantes para ellos…</p>
-                <p>Todo esto es muy provechoso para nuestra salud. No en vano, múltiples investigaciones han demostrado que las técnicas con animales contribuyen al avance de los pacientes. El tratamiento con animales es favorable en todas las edades: desde la infancia hasta la vejez.</p>
+                <p>Todo esto es muy provechoso para nuestra salud. No en vano, múltiples investigaciones han demostrado que las técnicas con animales contribuyen al avance de los pacientes. El tratamiento con animales es favorable en todas las edades: desde la infancia hasta la vejez.</p> -->
             </main>
             <footer>
                 <p>
@@ -104,14 +130,14 @@
         <aside>
             <!--aside(etiqueta) se usa para poner publicidad-->
             <!--No puedo tener "h1" para "aside" jamas porque pertenece a la pagina y ese es el titulo-->
-            <p></p>
-            <img src="" alt="">
+            <!-- <p></p>
+            <img src="" alt=""> -->
         </aside>
     </section>
     <footer class="enlaces">
         <div class="iconos">
-            <a  href="https://www.facebook.com/" target="_blank">
-                <i class="fa-brands fa-facebook-f"></i>
+            <a  href="https://www.facebook.com/" target="_blank" >
+                <i class="fa-brands fa-facebook-f" width="116" hight ="116"></i>
             </a>
             <a href="https://www.instagram.com/" target="_blank">
                 <!-- <img src="./assets/Imagen/socialInstagram.svg" alt="IconoInstagram" height="25"> -->
@@ -127,5 +153,10 @@
         <p>Todos los derechos reservados</p>
         </div>
     </footer>
-</body>
+    <!-- JavaScrip de bs --><!--Siempre va despues del footer-->
+    <!-- Esto es para trabajar con el navegador de bootstrap desde la pagina, es decir trabajando desde el servidor de boots. -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+    <!-- Esto es para usarlo desde nuestras carpetas -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </html>
+</body> 
