@@ -1,0 +1,177 @@
+.miembros{
+    @include flexible(flex,space-around,center, space-around);
+    background-color: map-get($colores,color-maingeneral);
+    border: 3px solid rgb(4, 3, 3);
+    width: 80%;
+    height: 60vh;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    // display: flex;
+    // justify-content: space-around;
+    // align-items: center;
+    // align-content: space-around;
+    // margin-top: 10px;
+
+
+}
+
+.miembro{
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:"Rubik-Italic-VariableFont_wght";
+    font-size: 30px;
+    /*background-color: coral;
+    border: 1px solid black;
+    height: 50vh;
+    width: 40%;
+    margin: 0 auto;
+    display: flex; /*las cajas se acomodan una al lado de la otra*/
+    /*flex-direction: row;/*row, me lo deja en linea o podemos poner "column" */
+        /* inline- flex con esto logramos que los elemenos sean flexibles (con respecto a sus hijos) y en bloque*/
+    /*flex-wrap: column;
+    align-items: center; /*cuando el contenedor es una fila, justifica en el eje vertical(column).*/
+    /*justify-content: center; /*cuando el contenedor es una columna, justifica en el eje horizontal(wrap).*//* otros tipos de centrar: space-around, space-between, space-evenly, center, flex-end, flex-start*/
+    /*si quiero centrar completamente sin importar el sentido del contenedor uso*/
+    /*justify-content: center;*/
+    /*si quiero centrar verticamente*/
+    /*align-items: center;*/
+    
+}
+
+.miembro img{
+    height: auto;
+    width: 100%;
+    object-fit: cover; /*object-fit: cover; //para que la imagen se adapte al tamaño de la caja*/
+    flex-grow: 1;/*que dentro de la caja flexible ocupe todo el espacio que puedo*/
+    opacity: 0.85;
+    transition: 0.1s ease;
+    font-size: 30px;
+}
+
+.miembro img:hover{
+    width: 30%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+@media screen and (max-width: 768px){
+    miembro{
+        flex-wrap: wrap;
+    }
+    miembro img{
+        height: 80%;
+    }
+
+    miembro img:hover{
+        background-color: black;
+        width: 70%;
+    }
+
+} 
+
+
+
+
+
+.articleIndex{
+    background-color: rgb(49, 146, 146);
+    font-weight: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    width: 80%;
+    height: auto;
+    margin: 10px auto;
+}
+
+.tipografia1{
+    font-family: 'Gloock-Regular', serif;
+    height: auto;
+    font-size: 18px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.tipografiaParrafo{
+    font-size: 20px;
+    font-family:"RobotoSlab-VariableFont_wght";
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/*.Main{
+    background-color: red;
+    border: 3px solid rgb(149, 137, 137);
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+
+/* Pongo medias queries que adapten los componentes y estilados a una version mobile */
+/* celular: 0px a 768px
+tablet: 769px a 1024px
+escritorio notbook: 1025px a 1400px
+escritorio pc: 1401px */
+/* En las versiones mobile, es recomendable usar en auto casi todo. */
+
+/* 
+@media screen and (max-width: 768px){
+    .contenedorGrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas: "header"
+                                "nav"
+                                "main"
+                                "aside"
+                                "footer";
+        row-gap: 10px; /* Si quiero que los contenidos esten separados*/
+        /* column-gap: ; tambien se puede usar, pero no tiene sentido en este caso 
+    }
+}*/
+
+
+/* @ = condicional */
+
+/*Estamos pidiendo dos condiciones:
+                                    Que sea una una pantalla
+                                    Que sea como maximo 758 px esta pantalla  */
+
+
+/* Esta es la media querie para una tablet en un diseño de desktop first */
+
+/* @media screen and (min-width: 769px) and (max-width_ 1024px) {
+    .contenedorGrid{
+        grid-template-columns: 0.2fr 1fr;
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: "header header"
+                                "nav main"
+                                "nav aside"
+                                "footer footer";
+        row-gap: 10px;
+    }
+    
+} */
+
+/* mobile first tablet */
+/* @media screen and (min-width: 768px) and (max-width_ 1024px){ 
+    
+}*/
+
+
+
+/* mobile first escritorio */
+/* @media screen and (min-width: 1024px){ 
+    
+}*/

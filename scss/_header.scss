@@ -1,0 +1,53 @@
+.Header{
+    background-color: map-get($colores,color-headergeneral);
+    height: 6.8vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex; 
+    /*position: sticky;
+    top: 0px;*/ /* display: flex no me funciono hasta que coloque el top */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border-radius: $borde-10px;
+    -webkit-border-radius: $borde-10px;
+    -moz-border-radius: $borde-10px;
+    
+}
+
+.logoPerrito{
+    border-radius: $borde-10px;
+    -webkit-border-radius: $borde-10px;
+    -moz-border-radius: $borde-10px;
+}
+
+.TituloPrincipal{
+    background-color: none;
+    font-family: $tipografia-glock;
+    font-size: 35px;
+}
+
+.listaNavegacion{
+    width: 19vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;  
+    list-style: none;
+    margin-right: 2rem;
+    text-decoration: none;
+    height: auto;
+}
+
+.linkNav{
+    display: flex;
+    justify-content:left;
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    margin-right: 10px;
+    
+}

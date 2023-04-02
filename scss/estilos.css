@@ -91,7 +91,8 @@
   /* display: flex; */
   height: 80%;
   width: 90%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   /*/para que la imagen se adapte al tamaño de la caja y no se deforme */
   flex-grow: 1;
   /* que dentro de la caja flexible ocupe todo el espacio que puedo */
@@ -166,7 +167,8 @@
   justify-content: center;
   height: 1000%;
   width: 70%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   /*/para que la imagen se adapte al tamaño de la caja y no se deforme */
   flex-grow: 1;
   /* que dentro de la caja flexible ocupe todo el espacio que puedo */
@@ -226,7 +228,8 @@
   /* display: flex; */
   height: 80%;
   width: 90%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   /*/para que la imagen se adapte al tamaño de la caja y no se deforme */
   flex-grow: 1;
   /* que dentro de la caja flexible ocupe todo el espacio que puedo */
@@ -294,7 +297,8 @@
   /* display: flex; */
   height: 80%;
   width: 90%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   /*/para que la imagen se adapte al tamaño de la caja y no se deforme */
   flex-grow: 1;
   /* que dentro de la caja flexible ocupe todo el espacio que puedo */
@@ -362,7 +366,8 @@
   /* display: flex; */
   height: 80%;
   width: 90%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   /*/para que la imagen se adapte al tamaño de la caja y no se deforme */
   flex-grow: 1;
   /* que dentro de la caja flexible ocupe todo el espacio que puedo */
@@ -485,16 +490,17 @@
 }
 
 .miembros {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-content: space-around;
   background-color: rgb(126, 126, 126);
   border: 3px solid rgb(4, 3, 3);
   width: 80%;
   height: 60vh;
   margin: 0 auto;
+  display: flex;
   flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  margin-top: 10px;
 }
 
 .miembro {
@@ -528,7 +534,8 @@
 .miembro img {
   height: auto;
   width: 100%;
-  object-fit: cover; /*object-fit: cover; //para que la imagen se adapte al tamaño de la caja*/
+  -o-object-fit: cover;
+     object-fit: cover; /*object-fit: cover; //para que la imagen se adapte al tamaño de la caja*/
   flex-grow: 1; /*que dentro de la caja flexible ocupe todo el espacio que puedo*/
   opacity: 0.85;
   transition: 0.1s ease;
@@ -702,6 +709,4 @@ escritorio pc: 1401px */
   align-items: center;
   align-content: center;
   align-self: center;
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */

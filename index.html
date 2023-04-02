@@ -1,162 +1,163 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- initial-scale, me indica que un px es igual para una pc como una tablet o mobile  -->
-    <title>TerapiAnimal</title>
-    <!--favicon-->
-    <link rel="shotcut icon" href="./favicon.ico" type="image/x-icon">
-    <!-- BootStrap --><!--Siempre va antes de cualquier estilo-->
-    <!-- link para trabjar directo con el servidor -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-    <!-- link para trabajar con archivos dentro de "nuestro servidor" -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet"> 
-        <!--estilos-->
-    <link rel="stylesheet" href="./css/estilos.css">
-    <!-- <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./css/brands.min.css">
-    <link rel="stylesheet" href="./css/fontawesome.min.css">
-    <link rel="stylecheet" href="./css/regular.min.css">
-    <link rel="stylesheet" href="./css/solid.min.css">
-    <link rel="stylesheet" href="./css/svg-with-js.min.css">
-    <link rel="stylesheet" href="./css/v4-font-face.min.css">
-    <link rel="stylesheet" href="./css/v4-shims.min.css">
-    <link rel="stylesheet" href="./css/v5-font-face.min.css"> -->
-    <script src="https://kit.fontawesome.com/9ef6259fa0.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <header class = "Header">
-        <div> <!--separan contenido pero no es necesario que lleven titulo y subtitulo-->
-            <!--Etiqueta, del tipo "contenedora", "comodín", "padre"-->
-            <a href = "#"><!--El logo tiene que estar envuelto en un ancla, asi cada vez que hacemos click sobre el mismo, nos lleva al index-->
-                
-                <img class="logoPerrito" src="./assets/Imagen/Logo_Perrito.jpeg" alt="logo_de_perrito" width="116">
-            <!--"alt"" se usa para las personas no videntes-->
-            </a>
-        </div>
-        <section class = "TituloPrincipal">
-            <h2>TerapiAnimal</h2>
-        </section>
-        <nav>
-            <!--esto es una lista desordenada de navegacion-->
-            <!--hay dos tipos de enlaces_rutas: absolutas o relativas-->
-            <ul class="listaNavegacion"> 
-            <p></p>
-                <li>
-                    <a class="linkNav" href="#">Inicio</a>
-                </li>
-                <li>
-                    <a class="linkNav" href="./pages/galeria.html" >Galería </a>
-                </li>
-                <li>
-                    <a class="linkNav" href="./pages/terapia.html">Terapias </a>
-                </li>
-                <li>
-                    <a class="linkNav" href="./pages/nosotros.html">Nosotros </a>
-                </li>
-                <li>
-                    <a class="linkNav" href="./pages/contacto.html">Contacto </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main class="Main">
-        <div class="miembros">
-            <div class="miembro">
-                <img href="./pages/galeria.html" src="./assets/Imagen/Perro.jpg" alt="Perro">Perrito
-            </div>
-            <div class="miembro">
-                <img href="./pages/galeria.html" src="./assets/Imagen/gato.avif" alt="Gato">Diana
-            </div>
-            <div class="miembro">
-                <img href="./pages/galeria.html" src="./assets/Imagen/vaca.jpg" alt="Vaca">Vaca
-            </div>
-            <div class="miembro">
-                <img href="./pages/galeria.html" src="./assets/Imagen/carpincho.jpg" alt="Carpincho">Carpi
-            </div>
-            <div class="miembro">
-                <img href="./pages/galeria.html" src="./assets/Imagen/llama.jpg" alt="Llama">Cusco
-            </div>
-        </div>
-    </main>
-    <section>
-        <h3>
-            
-        </h3>
-        <article class="articleIndex">
-        <!--Solo dentro de la etiqueta "article" podemos repetir h1, h2, h3, h4, h5 y h6-->
-        <!--Tambien podemos poner nuestro propio header, main, footer-->
-            <header>
-            </header>
-            <main class="tipografia1">
-                <br>
-                <h2>Terapia con animales: ¿Qué es?</h2>
-                <br>
-                <p class="tipografiaParrafo">&emsp;La terapia con animales ha conseguido buenos resultados con un gran número de pacientes. De hecho, numerosos estudios demuestran que tener perros reduce la ansiedad. La terapia con mascotas cada vez gana más adeptos: te contamos en qué consiste y cómo funciona.
-                Si te interesa este ámbito y quieres colaborar en la difusión de este tipo de terapias, puedes profundizar más, contactanos y sacate todas las dudas que tengas.
-                </p>
-                <br>
-                <h3>¿En qué consiste la terapia con animales?</h3>
-                <br>
-                <p class="tipografiaParrafo">&emsp; La terapia con animales es una intervención que incorpora a los animales para potenciar el bienestar y la salud de las personas en función de sus necesidades. El objetivo suele encararse hacia la mejora de las funciones físicas, cognitivas, emocionales y sociales de quienes se benefician de este tipo de tratamiento.
-                Los campos de aplicación de esta terapia son múltiples. Y es que la presencia de animales reduce el estrés y la ansiedad a nivel general y, además, tiene numerosos beneficios para personas o colectivos con necesidades especiales. Es el caso de personas en riesgo de exclusión social, enfermos de salud mental o incluso jóvenes en centros penitenciarios.</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- initial-scale, me indica que un px es igual para una pc como una tablet o mobile  -->
+        <title>TerapiAnimal</title>
+        <!--favicon-->
+        <link rel="shotcut icon" href="./favicon.ico" type="image/x-icon">
+        <!-- BootStrap --><!--Siempre va antes de cualquier estilo-->
+        <!-- link para trabjar directo con el servidor -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- link para trabajar con archivos dentro de "nuestro servidor" -->
+        <link href="./css/bootstrap.min.css" rel="stylesheet"> 
+            <!--estilos-->
+        <link rel="stylesheet" href="./css/estilos.css">
+        <!-- <link rel="stylesheet" href="./css/all.min.css">
+        <link rel="stylesheet" href="./css/brands.min.css">
+        <link rel="stylesheet" href="./css/fontawesome.min.css">
+        <link rel="stylecheet" href="./css/regular.min.css">
+        <link rel="stylesheet" href="./css/solid.min.css">
+        <link rel="stylesheet" href="./css/svg-with-js.min.css">
+        <link rel="stylesheet" href="./css/v4-font-face.min.css">
+        <link rel="stylesheet" href="./css/v4-shims.min.css">
+        <link rel="stylesheet" href="./css/v5-font-face.min.css"> -->
+        <script src="https://kit.fontawesome.com/9ef6259fa0.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class = "Header">
+            <div> <!--separan contenido pero no es necesario que lleven titulo y subtitulo-->
+                <!--Etiqueta, del tipo "contenedora", "comodín", "padre"-->
+                <a href = "#"><!--El logo tiene que estar envuelto en un ancla, asi cada vez que hacemos click sobre el mismo, nos lleva al index-->
                     
-                <br>
-                <h3>Tipos de terapia animal</h3>
-                <br>
-                <p class="tipografiaParrafo">&emsp;Como hemos comentado anteriormente, estos tratamientos han resultado muy efectivos en personas con necesidades diferentes. En este sentido, la terapia con animales para la ansiedad y la terapia con animales para la depresión han demostrado su efectividad por la suma de beneficios que aportan, como veremos más adelante.
-                En función del nivel de exposición y de las necesidades de cada persona, podemos distinguir 3 tipos de terapias con animales.</p>
-                <br>
-                <h4 href="./pages/terapia.html">&emsp;&emsp;&emsp;Terapias asistidas con animales</h4>
-                <br>
-                <h4 href="./pages/terapia.html">&emsp;&emsp;&emsp;Actividades asistidas con animales</h4>
-                <br>
-                <h4 href="./pages/terapia.html">&emsp;&emsp;&emsp;Educación asistida con animales</h4>
-                <br>
-                <!-- <p>Son numerosos los estudios que revelan la importancia y los beneficios de los animales en tratamientos de múltiples enfermedades.</p>
-                <p>Son varios los estudios que demuestran su importancia para el tratamiento de diferentes trastornos. Los animales son beneficiosos para todos nosotros: nos dan cariño, nos ofrecen su interés, nos sentimos importantes para ellos…</p>
-                <p>Todo esto es muy provechoso para nuestra salud. No en vano, múltiples investigaciones han demostrado que las técnicas con animales contribuyen al avance de los pacientes. El tratamiento con animales es favorable en todas las edades: desde la infancia hasta la vejez.</p> -->
-            </main>
-            <footer>
-                <p>
-                </p>
-            </footer>
-        </article>
-    </section>
-    <section>
-        <!--<h2> Aca van las publicidades</h2>-->
-        <aside>
-            <!--aside(etiqueta) se usa para poner publicidad-->
-            <!--No puedo tener "h1" para "aside" jamas porque pertenece a la pagina y ese es el titulo-->
-            <!-- <p></p>
-            <img src="" alt=""> -->
-        </aside>
-    </section>
-    <footer class="enlaces">
-        <div class="iconos">
-            <a  href="https://www.facebook.com/" target="_blank" >
-                <i class="fa-brands fa-facebook-f" width="116" hight ="116"></i>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-                <!-- <img src="./assets/Imagen/socialInstagram.svg" alt="IconoInstagram" height="25"> -->
-                <i class="fa-brands fa-instagram" alt="IconoInstagram" ></i>
-            </a>
-            </a>
-            <a href="https://www.youtube.com/" target="_blank">
-                <i class="fa-brands fa-youtube"></i>
-            </a>
-            
-        </div>
-        <div class = "todoslosderechos">
-        <p>Todos los derechos reservados</p>
-        </div>
-    </footer>
-    <!-- JavaScrip de bs --><!--Siempre va despues del footer-->
-    <!-- Esto es para trabajar con el navegador de bootstrap desde la pagina, es decir trabajando desde el servidor de boots. -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
-    <!-- Esto es para usarlo desde nuestras carpetas -->
-    <script src="./js/bootstrap.bundle.min.js"></script>
+                    <img class="logoPerrito" src="./assets/Imagen/Logo_Perrito.jpeg" alt="logo_de_perrito" width="116">
+                <!--"alt"" se usa para las personas no videntes-->
+                </a>
+            </div>
+            <section class = "TituloPrincipal">
+                <h2>TerapiAnimal</h2>
+            </section>
+            <nav>
+                <!--esto es una lista desordenada de navegacion-->
+                <!--hay dos tipos de enlaces_rutas: absolutas o relativas-->
+                <ul class="listaNavegacion"> 
+                <p></p>
+                    <li>
+                        <a class="linkNav" href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="linkNav" href="./pages/galeria.html" >Galería </a>
+                    </li>
+                    <li>
+                        <a class="linkNav" href="./pages/terapia.html">Terapias </a>
+                    </li>
+                    <li>
+                        <a class="linkNav" href="./pages/nosotros.html">Nosotros </a>
+                    </li>
+                    <li>
+                        <a class="linkNav" href="./pages/contacto.html">Contacto </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="miembros">
+                <div class="miembro">
+                    <img href="./pages/galeria.html" src="./assets/Imagen/Perro.jpg" alt="Perro">Perrito
+                </div>
+                <div class="miembro">
+                    <img href="./pages/galeria.html" src="./assets/Imagen/gato.avif" alt="Gato">Diana
+                </div>
+                <div class="miembro">
+                    <img href="./pages/galeria.html" src="./assets/Imagen/vaca.jpg" alt="Vaca">Vaca
+                </div>
+                <div class="miembro">
+                    <img href="./pages/galeria.html" src="./assets/Imagen/carpincho.jpg" alt="Carpincho">Carpi
+                </div>
+                <div class="miembro">
+                    <img href="./pages/galeria.html" src="./assets/Imagen/llama.jpg" alt="Llama">Cusco
+                </div>
+            </div>
+        
+        <section>
+            <h3>
+                
+            </h3>
+            <article class="articleIndex">
+            <!--Solo dentro de la etiqueta "article" podemos repetir h1, h2, h3, h4, h5 y h6-->
+            <!--Tambien podemos poner nuestro propio header, main, footer-->
+                <header>
+                </header>
+                <main class="tipografia1">
+                    <br>
+                    <h2>Terapia con animales: ¿Qué es?</h2>
+                    <br>
+                    <p class="tipografiaParrafo">&emsp;La terapia con animales ha conseguido buenos resultados con un gran número de pacientes. De hecho, numerosos estudios demuestran que tener perros reduce la ansiedad. La terapia con mascotas cada vez gana más adeptos: te contamos en qué consiste y cómo funciona.
+                    Si te interesa este ámbito y quieres colaborar en la difusión de este tipo de terapias, puedes profundizar más, contactanos y sacate todas las dudas que tengas.
+                    </p>
+                    <br>
+                    <h3>¿En qué consiste la terapia con animales?</h3>
+                    <br>
+                    <p class="tipografiaParrafo">&emsp; La terapia con animales es una intervención que incorpora a los animales para potenciar el bienestar y la salud de las personas en función de sus necesidades. El objetivo suele encararse hacia la mejora de las funciones físicas, cognitivas, emocionales y sociales de quienes se benefician de este tipo de tratamiento.
+                    Los campos de aplicación de esta terapia son múltiples. Y es que la presencia de animales reduce el estrés y la ansiedad a nivel general y, además, tiene numerosos beneficios para personas o colectivos con necesidades especiales. Es el caso de personas en riesgo de exclusión social, enfermos de salud mental o incluso jóvenes en centros penitenciarios.</p>
+                        
+                    <br>
+                    <h3>Tipos de terapia animal</h3>
+                    <br>
+                    <p class="tipografiaParrafo">&emsp;Como hemos comentado anteriormente, estos tratamientos han resultado muy efectivos en personas con necesidades diferentes. En este sentido, la terapia con animales para la ansiedad y la terapia con animales para la depresión han demostrado su efectividad por la suma de beneficios que aportan, como veremos más adelante.
+                    En función del nivel de exposición y de las necesidades de cada persona, podemos distinguir 3 tipos de terapias con animales.</p>
+                    <br>
+                    <h4 href="./pages/terapia.html">&emsp;&emsp;&emsp;Terapias asistidas con animales</h4>
+                    <br>
+                    <h4 href="./pages/terapia.html">&emsp;&emsp;&emsp;Actividades asistidas con animales</h4>
+                    <br>
+                    <h4 href="./pages/terapia.html">&emsp;&emsp;&emsp;Educación asistida con animales</h4>
+                    <br>
+                    <!-- <p>Son numerosos los estudios que revelan la importancia y los beneficios de los animales en tratamientos de múltiples enfermedades.</p>
+                    <p>Son varios los estudios que demuestran su importancia para el tratamiento de diferentes trastornos. Los animales son beneficiosos para todos nosotros: nos dan cariño, nos ofrecen su interés, nos sentimos importantes para ellos…</p>
+                    <p>Todo esto es muy provechoso para nuestra salud. No en vano, múltiples investigaciones han demostrado que las técnicas con animales contribuyen al avance de los pacientes. El tratamiento con animales es favorable en todas las edades: desde la infancia hasta la vejez.</p> -->
+                </main>
+                <footer>
+                    <p>
+                    </p>
+                </footer>
+            </article>
+        </section>
+        <section>
+            <!--<h2> Aca van las publicidades</h2>-->
+            <aside>
+                <!--aside(etiqueta) se usa para poner publicidad-->
+                <!--No puedo tener "h1" para "aside" jamas porque pertenece a la pagina y ese es el titulo-->
+                <!-- <p></p>
+                <img src="" alt=""> -->
+            </aside>
+        </section>
+        </main> 
+        <footer class="enlaces">
+            <div class="iconos">
+                <a  href="https://www.facebook.com/" target="_blank" >
+                    <i class="fa-brands fa-facebook-f" width="116" hight ="116"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <!-- <img src="./assets/Imagen/socialInstagram.svg" alt="IconoInstagram" height="25"> -->
+                    <i class="fa-brands fa-instagram" alt="IconoInstagram" ></i>
+                </a>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                
+            </div>
+            <div class = "todoslosderechos">
+            <p>Todos los derechos reservados</p>
+            </div>
+        </footer>
+        <!-- JavaScrip de bs --><!--Siempre va despues del footer-->
+        <!-- Esto es para trabajar con el navegador de bootstrap desde la pagina, es decir trabajando desde el servidor de boots. -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
+        <!-- Esto es para usarlo desde nuestras carpetas -->
+        <script src="./js/bootstrap.bundle.min.js"></script>
+    </body> 
 </html>
-</body> 

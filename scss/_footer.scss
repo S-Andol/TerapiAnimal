@@ -1,0 +1,43 @@
+
+.enlaces{
+    background-color: map-get($colores,color-footergeneral);
+    background-color: rgb(176, 63, 63);
+    width: 80%;
+    height: auto;
+    margin: 10px auto;
+    .iconos{
+        background-color: rgb(186, 218, 246);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 120%;
+    }
+    .todoslosderechos{
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* font-size: medium; */
+    }
+
+}
+
+// .iconos{
+//     background-color: rgb(186, 218, 246);
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: nowrap;
+//     justify-content: space-evenly;
+//     align-items: center;
+//     height: 120%;
+// }
+
+// .todoslosderechos{
+//     height: auto;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     /* font-size: medium; */
+// }

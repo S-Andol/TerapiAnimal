@@ -1,0 +1,586 @@
+@font-face {
+    font-family: "Gloock-Regular";
+    src: url("../assets/Fonts/Gloock/Gloock-Regular.ttf");
+}
+
+@font-face {
+    font-family:"Inconsolata-VariableFont_wdth,wght";
+    src: url("../assets/Fonts/Inconsolata/");
+}
+@font-face {
+    font-family:"RobotoSlab-VariableFont_wght";
+    src: url("../assets/Fonts/Roboto_Slab/");
+}
+
+@font-face {
+    font-family:"Rubik-Italic-VariableFont_wght";
+    src: url("../assets/Fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Header{
+    background-color: var(--background-navy-color,#0259a1);
+    height: 6.8vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex; 
+    /*position: sticky;
+    top: 0px;*/ /* display: flex no me funciono hasta que coloque el top */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+}
+
+.logoPerrito{
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+}
+
+.TituloPrincipal{
+    background-color: none;
+    font-family: "Gloock-Regular";
+    font-size: 35px;
+}
+
+.listaNavegacion{
+    width: 19vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;  
+    list-style: none;
+    margin-right: 2rem;
+    text-decoration: none;
+    height: auto;
+}
+
+.linkNav{
+    display: flex;
+    justify-content:left;
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    margin-right: 10px;
+    
+}
+
+/*.Main{
+    background-color: red;
+    border: 3px solid rgb(149, 137, 137);
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+.miembros{
+    background-color: rgb(126, 126, 126);
+    border: 3px solid rgb(4, 3, 3);
+    width: 80%;
+    height: 60vh;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    margin-top: 10px;
+
+
+}
+
+.miembro{
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:"Rubik-Italic-VariableFont_wght";
+    font-size: 30px;
+    /*background-color: coral;
+    border: 1px solid black;
+    height: 50vh;
+    width: 40%;
+    margin: 0 auto;
+    display: flex; /*las cajas se acomodan una al lado de la otra*/
+    /*flex-direction: row;/*row, me lo deja en linea o podemos poner "column" */
+        /* inline- flex con esto logramos que los elemenos sean flexibles (con respecto a sus hijos) y en bloque*/
+    /*flex-wrap: column;
+    align-items: center; /*cuando el contenedor es una fila, justifica en el eje vertical(column).*/
+    /*justify-content: center; /*cuando el contenedor es una columna, justifica en el eje horizontal(wrap).*//* otros tipos de centrar: space-around, space-between, space-evenly, center, flex-end, flex-start*/
+    /*si quiero centrar completamente sin importar el sentido del contenedor uso*/
+    /*justify-content: center;*/
+    /*si quiero centrar verticamente*/
+    /*align-items: center;*/
+    
+}
+
+.miembro img{
+    height: auto;
+    width: 100%;
+    object-fit: cover; /*object-fit: cover; //para que la imagen se adapte al tamaño de la caja*/
+    flex-grow: 1;/*que dentro de la caja flexible ocupe todo el espacio que puedo*/
+    opacity: 0.85;
+    transition: 0.1s ease;
+    font-size: 30px;
+}
+
+.miembro img:hover{
+    width: 30%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+@media screen and (max-width: 768px){
+    miembro{
+        flex-wrap: wrap;
+    }
+    miembro img{
+        height: 80%;
+    }
+
+    miembro img:hover{
+        background-color: black;
+        width: 70%;
+    }
+
+} 
+
+.miembrosGaleria{
+    background-color: rgb(181, 181, 181);
+    border: 3px solid rgb(4, 3, 3);
+    width: 80%;
+    height: auto;
+    margin: 10px auto;
+    display: flex;  /* display: grid te proporciona una cuadrícula de una sola columna, por lo que tus elementos continúan mostrándose uno debajo del otro, como lo hacen en el flujo normal. display: flex trabaja en una dimension y display: grid trabaja en 2 dimensiones */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:first baseline;
+    align-content:flex-start;
+}
+
+.miembroGaleria{
+    width:  90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 20px;
+    margin-left: 50px;
+
+}
+
+/* .descripcionMiembro{
+    height: auto;
+    display: flex;
+    justify-content:right;
+    align-content: center;
+} */
+
+.tipografiaGaleria{
+    font-family: "RobotoSlab-VariableFont_wght";
+    height: auto;
+    width: 50%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: left;
+    align-content: center;
+    margin: 0 auto;
+
+}
+/* .tipografiaParrafo{
+    font-size: 20px;
+    font-family:"RobotoSlab-VariableFont_wght";
+    
+} */
+
+
+.miembroGaleria img{
+    height: 50%;
+    width: 100%; 
+    object-fit: cover; /*object-fit: cover; //para que la imagen se adapte al tamaño de la caja y no se deforme*/
+    /*flex-grow: 1; que dentro de la caja flexible ocupe todo el espacio que puedo */
+    font-size: 30px;
+    border: 3px solid rgb(4, 3, 3);
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    padding: 2px; 
+}
+
+.miemrbroPerrito{
+    position: relative;
+    cursor: pointer;
+    /* Que se esconda todo lo que salga de ese elemento ya que este elemento va a referenciar a un txt      */
+    overflow: hidden;
+}
+
+.miembroPerrito:before{
+    content: "Perrito";
+    position: absolute;
+    top: auto;
+    bottom:auto;
+    left: auto;
+    right:auto; 
+    
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    padding: 2px; 
+    background-color: rgb(219, 146, 179);
+    transform:scaleY(0);
+    transition: transform .4s;
+    color: white;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem ;
+}
+
+.miembroPerrito:hover:before{
+    transform: scaleY(1);
+}
+
+.miembroPerrito{
+    grid-area:auto; 
+}
+
+.miemrbroGato{
+    position: relative;
+    cursor: pointer;
+    /* Que se esconda todo lo que salga de ese elemento ya que este elemento va a referenciar a un txt      */
+    overflow:hidden;
+}
+
+.miembroGato:before{
+    content: "Diana";
+    position: absolute;
+    top: auto;
+    bottom:auto;
+    left: auto;
+    right:auto; 
+    
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    padding: 2px; 
+    background-color: rgb(181, 127, 152);
+    transform:scaleY(0);
+    transition: transform .4s;
+    color: white;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem ;
+}
+
+.miembroGato:hover:before{
+    transform: scaleY(1);
+}
+
+.miembrogato{
+    grid-area:auto; 
+}
+
+.miemrbroVaca{
+    position: relative;
+    cursor: pointer;
+    /* Que se esconda todo lo que salga de ese elemento ya que este elemento va a referenciar a un txt      */
+    overflow:hidden;
+}
+
+.miembroVaca:before{
+    content: "Vaca";
+    position: absolute;
+    top: auto;
+    bottom:auto;
+    left: auto;
+    right:auto; 
+    
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    padding: 2px; 
+    background-color: rgb(181, 127, 152);
+    transform:scaleY(0);
+    transition: transform .4s;
+    color: white;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem ;
+}
+
+.miembroVaca:hover:before{
+    transform: scaleY(1);
+}
+
+.miembroVaca{
+    grid-area:auto; 
+}
+
+.miembroCarpincho{
+    position: relative;
+    cursor: pointer;
+    /* Que se esconda todo lo que salga de ese elemento ya que este elemento va a referenciar a un txt      */
+    overflow:hidden;
+}
+
+.miembroCarpincho:before{
+    content: "Carpi";
+    position: absolute;
+    top: auto;
+    bottom:auto;
+    left: auto;
+    right:auto; 
+    
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    padding: 2px; 
+    background-color: rgb(181, 127, 152);
+    transform:scaleY(0);
+    transition: transform .4s;
+    color: white;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem ;
+}
+
+.miembroCarpincho:hover:before{
+    transform: scaleY(1);
+}
+
+.miembroCarpincho{
+    grid-area:auto; 
+}
+
+.miembroCusco{
+    position: relative;
+    cursor: pointer;
+    /* Que se esconda todo lo que salga de ese elemento ya que este elemento va a referenciar a un txt      */
+    overflow:hidden;
+}
+
+.miembroCusco:before{
+    content: "Cusco";
+    position: absolute;
+    top: auto;
+    bottom:auto;
+    left: auto;
+    right:auto; 
+    
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    padding: 2px; 
+    background-color: rgb(181, 127, 152);
+    transform:scaleY(2.5);
+    transition: transform 5s;
+    color: white;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem ;
+}
+
+.miembroCusco:hover:before{
+    transform: scaleY(2.5);
+}
+
+.miembroCusco{
+    grid-area:auto; 
+}
+
+
+/*.miembro{
+    background-color: red;
+    border: 0px solid black;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    /*width: 200px;
+    height: 50%;*/
+    /*orde: -1; una forma de ordenar un hijo en particular
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}*/
+
+
+.articleIndex{
+    background-color: rgb(49, 146, 146);
+    font-weight: 500px;
+    line-height: 1.5;
+    text-align: justify;
+    width: 80%;
+    height: auto;
+    margin: 10px auto;
+}
+
+.tipografia1{
+    font-family: 'Gloock-Regular', serif;
+    height: auto;
+    font-size: 18px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.tipografiaParrafo{
+    font-size: 20px;
+    font-family:"RobotoSlab-VariableFont_wght";
+    margin-bottom: 10px;
+}
+
+.enlaces{
+    background-color: var(--background-navy-color,#0259a1);
+    background-color: rgb(176, 63, 63);
+    width: 80%;
+    height: auto;
+    margin: 10px auto;
+
+}
+
+.iconos{
+    background-color: rgb(186, 218, 246);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 120%;
+
+}
+
+.todoslosderechos{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* font-size: medium; */
+}
+
+/* Pongo medias queries que adapten los componentes y estilados a una version mobile */
+/* celular: 0px a 768px
+tablet: 769px a 1024px
+escritorio notbook: 1025px a 1400px
+escritorio pc: 1401px */
+/* En las versiones mobile, es recomendable usar en auto casi todo. */
+
+/* 
+@media screen and (max-width: 768px){
+    .contenedorGrid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas: "header"
+                                "nav"
+                                "main"
+                                "aside"
+                                "footer";
+        row-gap: 10px; /* Si quiero que los contenidos esten separados*/
+        /* column-gap: ; tambien se puede usar, pero no tiene sentido en este caso 
+    }
+}*/
+
+
+/* @ = condicional */
+
+/*Estamos pidiendo dos condiciones:
+                                    Que sea una una pantalla
+                                    Que sea como maximo 758 px esta pantalla  */
+
+
+/* Esta es la media querie para una tablet en un diseño de desktop first */
+
+/* @media screen and (min-width: 769px) and (max-width_ 1024px) {
+    .contenedorGrid{
+        grid-template-columns: 0.2fr 1fr;
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: "header header"
+                                "nav main"
+                                "nav aside"
+                                "footer footer";
+        row-gap: 10px;
+    }
+    
+} */
+
+/* mobile first tablet */
+/* @media screen and (min-width: 768px) and (max-width_ 1024px){ 
+    
+}*/
+
+
+
+/* mobile first escritorio */
+/* @media screen and (min-width: 1024px){ 
+    
+}*/
+
+.mainTerapias{
+    /* background-color: rgb(126, 126, 126);
+    border: 3px solid rgb(4, 3, 3);
+    width: 80%;
+    height: 60vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around; */
+
+    background-color: rgb(181, 181, 181);
+    border: 3px solid rgb(4, 3, 3);
+    width: 80%;
+    height: auto;
+    margin: 10px auto;
+    display: flex;  /* display: grid te proporciona una cuadrícula de una sola columna, por lo que tus elementos continúan mostrándose uno debajo del otro, como lo hacen en el flujo normal. display: flex trabaja en una dimension y display: grid trabaja en 2 dimensiones */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    align-content: center; 
+
+}
+
+.tiposTerapia{
+    background-color: none;
+    font-family: "RobotoSlab-VariableFont_wght";
+    font-size: 20px;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.videosTerapias{
+    display: flex;
+    flex-direction: center;
+}
+
+.Listado{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}

@@ -1,0 +1,433 @@
+.GaleriaGrid{
+  /* background-color: rgb(181, 181, 181); */
+  /* border: 3px solid rgb(4, 3, 3); */
+  width: 80%;
+  height: 6.8vh;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  /* row-gap: 10px; */
+  grid-template-areas: "header"
+                       "main"
+                       "footer"
+}
+
+.HeaderGaleria{
+  background-color: var(--background-navy-color,#0259a1);
+  height: 6.8vh;
+  width: 80%;
+  margin: 0 auto;
+  display: flex; 
+  /*position: sticky;
+  top: 0px;*/ /* display: flex no me funciono hasta que coloque el top */
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  
+}
+
+
+.Main{
+  background-color: rgb(181, 181, 181);
+  border: 3px solid rgb(4, 3, 3);
+  width: 80%;
+  margin: 7px auto;
+  height: auto;
+  /* grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1 fr 1fr; */
+  /* row-gap: 10px; */
+  /* grid-template-areas: "section . ."
+                      "div"
+                      "div" */
+  /* display: flex; */
+}
+
+
+
+.miembroGaleria{ /*ContenedorCard*/
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 10px;
+  grid-template-areas: "div div div"
+                          "div""div" */
+} 
+
+.miembroPerrito{ /*Card*/
+  width: 30%;
+  background-color: white;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  border: 1px solid wheat;
+  /* align-items: left;
+  align-content: left;
+  justify-content: left; */
+  /* text-align: justify; */
+  height: 100%;
+  font-family: "RobotoSlab-VariableFont_wght";
+  font-size: 20px;
+  margin: 0 auto
+}
+
+.tipografiaGaleria{
+  font-family: "RobotoSlab-VariableFont_wght";
+  height: auto;
+  width: 80%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  align-content: center;
+  margin: 0 auto;
+}
+
+
+.miembroPerrito img{ 
+  /* display: flex; */
+  height: 80%;
+  width: 90%; 
+  object-fit: cover; 
+  /*/para que la imagen se adapte al tamaño de la caja y no se deforme */
+  flex-grow: 1; 
+  /* que dentro de la caja flexible ocupe todo el espacio que puedo */
+  /* font-size: 30px;
+  /* border: 3px solid rgb(4, 3, 3); */
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  /* padding: 2px;  */
+}
+
+.miembroPerrito{
+  /* position: relative; */
+  cursor: pointer;
+  /* Que se esconda todo lo que salga de ese elemento ya que este elemento va a referenciar a un txt      */
+  overflow: hidden;
+}
+
+.miembroPerrito:before{
+  content: "Perrito";
+  position: absolute;
+  /* top: auto;
+  bottom:auto;
+  left: auto;
+  right:auto;  */
+  
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  /* padding: 2px;  */
+  background-color: rgb(219, 146, 179);
+  transform:scaleY(0);
+  transition: transform .4s;
+  color: white;
+  display: block;
+  /* justify-content: center;
+  align-items: center; */
+  font-size: 3rem ;
+}
+
+.miembroPerrito:hover:before{
+  transform: scaleY(1);
+}
+
+.miembroPerrito{
+  grid-area:auto; 
+}
+
+
+.miembroGato{
+  /* position: relative; */
+  cursor: pointer;
+}
+.miembroGato{
+  width: 30%;
+  background-color: white;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  border: 1px solid wheat;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 100%;
+  font-family: "RobotoSlab-VariableFont_wght";
+  font-size: 20px;
+  margin: 0 auto
+  /* width: 30%;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+  /* Que se esconda todo lo que salga de ese elemento ya que este elemento va a referenciar a un txt      */
+  /* overflow:hidden; */
+}
+
+.miembroGato img{ 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 1000%;
+  width: 70%; 
+  object-fit: cover; 
+  /*/para que la imagen se adapte al tamaño de la caja y no se deforme */
+  flex-grow: 1; 
+  
+  /* que dentro de la caja flexible ocupe todo el espacio que puedo */
+  /* font-size: 30px;
+  /* border: 3px solid rgb(4, 3, 3); */
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  padding: 2px; 
+}
+
+.miembroGato:before{
+  content: "Diana";
+  position: absolute;
+  top: auto;
+  bottom:auto;
+  left: auto;
+  right:auto; 
+  
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  padding: 2px; 
+  background-color: rgb(181, 127, 152);
+  transform:scaleY(0);
+  transition: transform .4s;
+  color: white;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem ;
+}
+
+.miembroGato:hover:before{
+  transform: scaleY(1);
+}
+
+.miembroGato{
+  grid-area:auto; 
+}
+
+.miembroVaca{
+  width: 30%;
+  background-color: white;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  border: 1px solid wheat;
+  /* align-items: left;
+  align-content: left;
+  justify-content: left; */
+  height: 100%;
+  font-family: "RobotoSlab-VariableFont_wght";
+  font-size: 20px;
+  margin: 0 auto
+
+}
+
+.miembroVaca img{ 
+  /* display: flex; */
+  height: 80%;
+  width: 90%; 
+  object-fit: cover; 
+  /*/para que la imagen se adapte al tamaño de la caja y no se deforme */
+  flex-grow: 1; 
+  
+  /* que dentro de la caja flexible ocupe todo el espacio que puedo */
+  /* font-size: 30px;
+  /* border: 3px solid rgb(4, 3, 3); */
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  padding: 2px; 
+}
+.miembroVaca{
+  /* position: relative; */
+  cursor: pointer;
+  /* Que se esconda todo lo que salga de ese elemento ya que este elemento va a referenciar a un txt      */
+  /* overflow:hidden; */
+}
+
+.miembroVaca:before{
+  content: "Vaca";
+  position: absolute;
+  top: auto;
+  bottom:auto;
+  left: auto;
+  right:auto; 
+  
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  padding: 2px; 
+  background-color: rgb(181, 127, 152);
+  transform:scaleY(0);
+  transition: transform .4s;
+  color: white;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem ;
+}
+
+.miembroVaca:hover:before{
+  transform: scaleY(1);
+}
+
+.miembroVaca{
+  grid-area:auto; 
+}
+
+.miembroCarpincho{ /*Card*/
+  width: 30%;
+  background-color: white;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  border: 1px solid wheat;
+  /* align-items: left;
+  align-content: left;
+  justify-content: left; */
+  /* text-align: justify; */
+  height: 100%;
+  font-family: "RobotoSlab-VariableFont_wght";
+  font-size: 20px;
+  margin: 0 auto
+}
+
+
+
+.miembroCarpincho img{ 
+  /* display: flex; */
+  height: 80%;
+  width: 90%; 
+  object-fit: cover; 
+  /*/para que la imagen se adapte al tamaño de la caja y no se deforme */
+  flex-grow: 1; 
+  /* que dentro de la caja flexible ocupe todo el espacio que puedo */
+  /* font-size: 30px;
+  /* border: 3px solid rgb(4, 3, 3); */
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  /* padding: 2px;  */
+}
+
+.miembroCarpincho{
+  /* position: relative; */
+  cursor: pointer;
+  /* Que se esconda todo lo que salga de ese elemento ya que este elemento va a referenciar a un txt      */
+  overflow: hidden;
+}
+
+.miembroCarpincho:before{
+  content: "Carpi";
+  position: absolute;
+  /* top: auto;
+  bottom:auto;
+  left: auto;
+  right:auto;  */
+  
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  /* padding: 2px;  */
+  background-color: rgb(219, 146, 179);
+  transform:scaleY(0);
+  transition: transform .4s;
+  color: white;
+  display: block;
+  /* justify-content: center;
+  align-items: center; */
+  font-size: 3rem ;
+}
+
+.miembroCarpincho:hover:before{
+  transform: scaleY(1);
+}
+
+.miembroCarpincho{
+  grid-area:auto; 
+}
+
+.miembroCusco{ /*Card*/
+  width: 30%;
+  background-color: white;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  border: 1px solid wheat;
+  /* align-items: left;
+  align-content: left;
+  justify-content: left; */
+  /* text-align: justify; */
+  height: 100%;
+  font-family: "RobotoSlab-VariableFont_wght";
+  font-size: 20px;
+  margin: 0 auto
+}
+
+
+.miembroCusco img{ 
+  /* display: flex; */
+  height: 80%;
+  width: 90%; 
+  object-fit: cover; 
+  /*/para que la imagen se adapte al tamaño de la caja y no se deforme */
+  flex-grow: 1; 
+  /* que dentro de la caja flexible ocupe todo el espacio que puedo */
+  /* font-size: 30px;
+  /* border: 3px solid rgb(4, 3, 3); */
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  /* padding: 2px;  */
+}
+
+.miembroCusco{
+  /* position: relative; */
+  cursor: pointer;
+  /* Que se esconda todo lo que salga de ese elemento ya que este elemento va a referenciar a un txt      */
+  overflow: hidden;
+}
+
+.miembroCusco:before{
+  content: "Cusco";
+  position: absolute;
+  /* top: auto;
+  bottom:auto;
+  left: auto;
+  right:auto;  */
+  
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 20px 20px 20px 20px;
+  -moz-border-radius: 20px 20px 20px 20px;
+  /* padding: 2px;  */
+  background-color: rgb(219, 146, 179);
+  transform:scaleY(0);
+  transition: transform .4s;
+  color: white;
+  display: block;
+  /* justify-content: center;
+  align-items: center; */
+  font-size: 3rem ;
+}
+
+.miembroCusco:hover:before{
+  transform: scaleY(1);
+}
+
+.miembroCusco{
+  grid-area:auto; 
+}

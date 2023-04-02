@@ -1,0 +1,48 @@
+.mainTerapias{
+    /* background-color: rgb($color-maingeneral);
+    border: 3px solid rgb(4, 3, 3);
+    width: 80%;
+    height: 60vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around; */
+
+    background-color: rgb(181, 181, 181);
+    border: 3px solid rgb(4, 3, 3);
+    width: 80%;
+    height: auto;
+    margin: 10px auto;
+    display: flex;  /* display: grid te proporciona una cuadrícula de una sola columna, por lo que tus elementos continúan mostrándose uno debajo del otro, como lo hacen en el flujo normal. display: flex trabaja en una dimension y display: grid trabaja en 2 dimensiones */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    align-content: center; 
+
+}
+
+.tiposTerapia{
+    background-color: none;
+    font-family: "RobotoSlab-VariableFont_wght";
+    font-size: 20px;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.videoTerapia{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.Listado{
+    margin-left: 2rem;
+}
+
+// .video{
+//     display: flex;
+//     justify-content: center;
+// }
