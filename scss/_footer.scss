@@ -1,43 +1,86 @@
 
 .enlaces{
     background-color: map-get($colores,color-footergeneral);
-    background-color: rgb(176, 63, 63);
+    background-color: rgba(255, 0, 0, 0.829);
     width: 80%;
     height: auto;
-    margin: 10px auto;
+    margin: 0px auto;
+    border-radius: $borde-10px;
+    -webkit-border-radius: $borde-10px;
+    -moz-border-radius: $borde-10px;
     .iconos{
-        background-color: rgb(186, 218, 246);
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        // background-color: rgb(186, 218, 246);
+        // display: flex;
+        // flex-direction: row;
+        // flex-wrap: nowrap;
+        // justify-content: space-evenly;
+        // align-items: center;
+        // height: 120%;
+        // color: #1877f2;
+        // animation-delay: 0.5s; /*Adds a animation delay of 1 seconds.*/
+        
+        /*animaciones para redes sociales*/
+        // .icons-wrapper{
+        position: relative;
+        display:flex;
         justify-content: space-evenly;
-        align-items: center;
-        height: 120%;
+        margin-top:15px;
+        .icon{
+            display: inline-block; /*Makes the icons inline block level elements. This will let us animate the transform property.*/ 
+            font-size: 44px;
+            animation: float infinite 4s ease-in-out ; 
+            /*Applies the float keyframe animation over 5s and makes it run infinitely.*/
+            /*  
+            animation-name: float;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-duration: 2s;
+            animation-delay: 5s;*/
+        }
+        .ri-instagram-line{
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* This is the first item so no animation delay needed.*/
+        }
+        
+        .ri-facebook-circle-line{
+            color: #030303;
+            animation-delay: 0.5s; /*Adds a animation delay of 1 seconds.*/
+        }
+        .ri-youtube-fill{
+            color: #25d366;
+            animation-delay: 1s; /*Adds a animation delay of 2 seconds.*/
+        }
+    }
+    .iconos::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background-color: rgb(37, 37, 37);
+        border-radius: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
     }
     .todoslosderechos{
         height: auto;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        /* font-size: medium; */
+        // font-size: medium;
+        font-family: 'font-family:"RobotoSlab-VariableFont_wght';
+        font-size: 20px;
     }
+
 
 }
 
-// .iconos{
-//     background-color: rgb(186, 218, 246);
-//     display: flex;
-//     flex-direction: row;
-//     flex-wrap: nowrap;
-//     justify-content: space-evenly;
-//     align-items: center;
-//     height: 120%;
-// }
 
-// .todoslosderechos{
-//     height: auto;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-//     /* font-size: medium; */
-// }
+
+
+
+
+

@@ -21,28 +21,36 @@
     justify-content: space-between;
     align-items:center;
     align-content: center; 
+    border-radius: $borde-10px;
+    -webkit-border-radius: $borde-10px;
+    -moz-border-radius: $borde-10px;
+    .tiposTerapia{
+        background-color: none;
+        font-family: "RobotoSlab-VariableFont_wght";
+        font-size: 20px;
+        width: 90%;
+        margin: 2rem auto;
+        .Listado{
+            margin-left: 2rem;
+        }
+    }
+    .videoTerapia{
+        display: flex;
+        flex-direction: column;
+        // text-align: center;
+        .video{
 
+            width: 100%;
+        }
+    }
 }
 
-.tiposTerapia{
-    background-color: none;
-    font-family: "RobotoSlab-VariableFont_wght";
-    font-size: 20px;
-    width: 90%;
-    margin: 2rem auto;
-}
 
-.videoTerapia{
-    display: flex;
-    flex-direction: column;
-    
-}
 
-.Listado{
-    margin-left: 2rem;
-}
 
-// .video{
-//     display: flex;
-//     justify-content: center;
-// }
+
+
+
+
+
+

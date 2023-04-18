@@ -5,13 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- initial-scale, me indica que un px es igual para una pc como una tablet o mobile  -->
-        <title>TerapiAnimal</title>
+        <title alt="Pagina de sobre Nosotros">Nosotros</title>
         <!--favicon-->
-        <link rel="shotcut icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="shotcut icon" href="./favicon.ico" type="image/x-icon">
         <!-- BootStrap --><!--Siempre va antes de cualquier estilo-->
-        <link href="./css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+        <!-- link para trabjar directo con el servidor -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- link para trabajar con archivos dentro de "nuestro servidor" -->
+        <link href="./css/bootstrap.min.css" rel="stylesheet"> 
             <!--estilos-->
-        <link rel="stylesheet" href="../css/estilos.css">
+            <link rel="stylesheet" href="../css/estilos.css">
         <!-- <link rel="stylesheet" href="./css/all.min.css">
         <link rel="stylesheet" href="./css/brands.min.css">
         <link rel="stylesheet" href="./css/fontawesome.min.css">
@@ -22,39 +25,41 @@
         <link rel="stylesheet" href="./css/v4-shims.min.css">
         <link rel="stylesheet" href="./css/v5-font-face.min.css"> -->
         <script src="https://kit.fontawesome.com/9ef6259fa0.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet"> -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
     </head>
     <body>
         <header class = "Header">
             <div> <!--separan contenido pero no es necesario que lleven titulo y subtitulo-->
                 <!--Etiqueta, del tipo "contenedora", "comodín", "padre"-->
                 <a href = "../index.html"><!--El logo tiene que estar envuelto en un ancla, asi cada vez que hacemos click sobre el mismo, nos lleva al index-->
-                    
                     <img class="logoPerrito" src="../assets/Imagen/Logo_Perrito.jpeg" alt="logo_de_perrito" width="116">
                 <!--"alt"" se usa para las personas no videntes-->
                 </a>
             </div>
-            <section class = "TituloPrincipal">
+            <section class = "TituloPrincipal animate__animated animate__flip">
                 <h2>TerapiAnimal</h2>
             </section>
             <nav>
                 <!--esto es una lista desordenada de navegacion-->
                 <!--hay dos tipos de enlaces_rutas: absolutas o relativas-->
                 <ul class="listaNavegacion"> 
-                <p></p>
-                    <li>
-                        <a class="linkNav" href="../index.html">Inicio</a>
+                
+                    <li class="linkNav">
+                        <a class="link" href="../index.html">Inicio</a>
                     </li>
-                    <li>
-                        <a class="linkNav" href="./galeria.html" >Galería </a>
+                    <li class="linkNav">
+                        <a class="link" href="./galeria.html" >Galería </a>
                     </li>
-                    <li>
-                        <a class="linkNav" href="./terapia.html">Terapias </a>
+                    <li class="linkNav">
+                        <a class="link" href="./terapia.html">Terapias </a>
                     </li>
-                    <li>
-                        <a class="linkNav" href="#">Nosotros </a>
+                    <li class="linkNav">
+                        <a class="link" href="#">Nosotros </a>
                     </li>
-                    <li>
-                        <a class="linkNav" href="./contacto.html">Contacto </a>
+                    <li class="linkNav">
+                        <a class="link" href="./contacto.html">Contacto </a>
                     </li>
                 </ul>
             </nav>
@@ -66,62 +71,43 @@
                 <h2> ¿Qué es una terapia asistida con animales y cuáles son nuestros objetivos?</h2>
                 <br>
                 <!--para multilinea usar alt+z-->
-                <p>Las TAA (Terapias Asistidas con Animales) son un tipo especial de terapia que se vale de la presencia de animales.Los perros son los más comunes, aunque también como se ve trabajamos con otro tipos de animales, como gatos, llamas o vacas entre otros.
-                Es por este recurso que empleamos como objetivos establecer mejorar su bienestar emocional, reducir el estrés o la ansiedad, mejorar la comunicación y las habilidades sociales, o mejorar la función física. En cualquier caso, es importante trabajar con un profesional de la salud mental capacitado en terapia asistida por animales para ayudarlo a determinar sus objetivos específicos y diseñar un plan de tratamiento adecuado., en sesiones grupales o individuales, con personas afectadas por alguna enfermedad que tenga repercusión directa en el ámbito social, emocional y/o cognitivo, para complementar así el tratamiento médico al que están sometidos.
+                <p>Las TAA (Terapias Asistidas con Animales) son un tipo especial de terapia que se vale de la presencia de animales.Los perros son los más comunes, aunque también en nuestro caso nosotros tenemos otro tipo de especialistas como se ven en las fotos. Trabajamos con animales, como gatos, llamas, carpinchos o vacas entre otros.
+                Mediante este metodo decidimos emplear como objetivo principal el mejorar su bienestar emocional, reducir el estrés, la ansiedad, recurar la comunicación fluida, como lo qu es, una importante habilidad social, y por ultimo el mejorar la función física. En cualquier caso, es importante trabajar con un profesional de la salud mental capacitado en terapia asistida por animales para ayudarlo a determinar sus objetivos específicos y diseñar un plan de tratamiento adecuado., en sesiones grupales o individuales, con personas afectadas por alguna enfermedad que tenga repercusión directa en el ámbito social, emocional y/o cognitivo, para complementar así el tratamiento médico al que están sometidos.
                 Durante los últimos años, la comunidad científica ha comprobado y demostrado la eficacia de estas terapias asistidas con animales, a través de numerosos estudios académicos y científicos.</p>
                 <br>
-                <img class="img_obj" src="../assets/Imagen/Terapia asistida.jpg" alt="imagen_perro de terapia asistida"> 
+                <img class="perro-nosotros" src="../assets/Imagen/Terapia asistida.jpg" alt="imagen_perro de terapia asistida"> 
             </section>
-            <!-- <section class="tiposTerapia">
-                <h2 class="TituloPrincipal"> ¿Qué es una terapia asistida con animales y cuáles son nuestros objetivos?</h2>
-                <br>
-                <h2> ¿Qué es una terapia asistida con animales y cuáles son nuestros objetivos?</h2>
-                <br>
-                <!--para multilinea usar alt+z-->
-                <!-- <p>La terapia asistida por animales es una forma de intervención terapéutica en la que los animales son utilizados como parte del tratamiento para mejorar la salud física, emocional y social de las personas. Los objetivos de la terapia asistida por animales pueden variar según las necesidades específicas de cada individuo y del tipo de terapia que se esté utilizando, pero algunos de los objetivos comunes incluyen:
-
-                    Mejorar el bienestar emocional: los animales pueden ayudar a reducir el estrés, la ansiedad, la depresión y la soledad. La interacción con los animales puede ayudar a las personas a sentirse más relajadas, seguras y felices.
-                    
-                    Promover la motivación y la participación en la terapia: trabajar con animales puede ser una forma más atractiva e interesante de participar en la terapia para algunas personas. Esto puede ayudar a mejorar la motivación y la participación en el tratamiento.
-                    
-                    Mejorar la comunicación y las habilidades sociales: trabajar con animales puede ayudar a mejorar la comunicación y las habilidades sociales, especialmente en personas que tienen dificultades para interactuar con otras personas.
-                    
-                    Mejorar la función física: algunos tipos de terapia asistida por animales pueden ayudar a mejorar la función física, como la movilidad y la coordinación.
-                    
-                    Proporcionar un sentido de propósito y responsabilidad: cuidar de un animal puede ayudar a las personas a sentirse útiles y proporcionar un sentido de propósito y responsabilidad.
-                    
-                    En general, los objetivos de la terapia asistida por animales son mejorar la calidad de vida de las personas y ayudarlas a alcanzar sus metas terapéuticas de una manera más efectiva y agradable.</p>
-                    <br> -->
-            <!-- </section>
             <section class="tiposTerapia" >
-                <h1 class="TituloPrincipal"> Nuestro Objetivo</h1>
+                <h1 class="TituloPrincipal"> Nuestro Motivo</h1>
                 <br>
-                <h2> ¿Qué es una terapia asistida con animales y cuáles son nuestros objetivos?</h2>
-                <br> -->
+                <h2> ¿Porqué lo hacemos?</h2>
+                <br>
                 <!--para multilinea usar alt+z-->
-                <!--<p>Como modelo de lenguaje, no tengo acceso a información personal sobre usted. Sin embargo, si está interesado en participar en la terapia asistida por animales, es posible que desee establecer objetivos específicos con su terapeuta o profesional de la salud mental. Algunos posibles objetivos podrían incluir mejorar su bienestar emocional, reducir el estrés o la ansiedad, mejorar la comunicación y las habilidades sociales, o mejorar la función física. En cualquier caso, es importante trabajar con un profesional de la salud mental capacitado en terapia asistida por animales para ayudarlo a determinar sus objetivos específicos y diseñar un plan de tratamiento adecuado.</p>
-                    <br>
-            </section> -->
+                <p>El motivo por el cual elegimos todos los dias realizar terapia animal, no es mas que el poder llenarnos de satisfaccion al ayudar a nuestros pacientes, el ser testigos de apreciar el proceso de crecimiento interno en cada uno de los participantes. 
+                </p>
+                <br>
+                <img class="perro-nosotros" src="../assets/Imagen/niño feliz.jpeg" alt="niño sonriendo con su perro"> 
+            </section>
         </main>
         <footer class="enlaces">
             <div class="iconos">
-                <a  href="https://www.facebook.com/" target="_blank" >
-                    <i class="fa-brands fa-facebook-f" width="116" hight ="116"></i>
+                <a href="https://www.instagram.com/" target="_blank" >
+                    <i class="ri-instagram-line icon" width="116" hight ="116"></i>
                 </a>
-                <a href="https://www.instagram.com/" target="_blank">
+                <a href="https://www.facebook.com/" target="_blank">
                     <!-- <img src="./assets/Imagen/socialInstagram.svg" alt="IconoInstagram" height="25"> -->
-                    <i class="fa-brands fa-instagram" alt="IconoInstagram" ></i>
+                    <i class="ri-facebook-circle-line icon" alt="IconoInstagram" ></i>
                 </a>
                 </a>
                 <a href="https://www.youtube.com/" target="_blank">
-                    <i class="fa-brands fa-youtube"></i>
+                    <i class="ri-youtube-fill icon"></i>
                 </a>
-            
+                
             </div>
             <div class = "todoslosderechos">
             <p>Todos los derechos reservados</p>
             </div>
-            </footer>
+        </footer>
             <!-- JavaScrip de bs --><!--Siempre va despues del footer-->
             <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
             <script src="./js/bootstrap.bundle.min.js"></script>

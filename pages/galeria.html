@@ -5,12 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- initial-scale, me indica que un px es igual para una pc como una tablet o mobile  -->
-        <title>TerapiAnimal</title>
+        <title alt="Pagina de Galeria">Nuestros especialistas</title>
         <!--favicon-->
         <link rel="shotcut icon" href="../favicon.ico" type="image/x-icon">
         <!-- BootStrap --><!--Siempre va antes de cualquier estilo-->
-        <link href="./css/bootstrap.min.css" rel="stylesheet"> 
-            <!--estilos-->
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+        
+        <!-- <link href="./css/bootstrap.min.css" rel="stylesheet">  -->
+        <!--estilos-->
         <link rel="stylesheet" href="../css/estilos.css">
         <!-- <link rel="stylesheet" href="./css/all.min.css">
         <link rel="stylesheet" href="./css/brands.min.css">
@@ -22,6 +24,9 @@
         <link rel="stylesheet" href="./css/v4-shims.min.css">
         <link rel="stylesheet" href="./css/v5-font-face.min.css"> -->
         <script src="https://kit.fontawesome.com/9ef6259fa0.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet"> -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
     </head>
     <body class="GaleriaGrid">
         <header class = "HeaderGaleria">
@@ -33,28 +38,28 @@
                 <!--"alt"" se usa para las personas no videntes-->
                 </a>
             </div>
-            <section class = "TituloPrincipal">
+            <section class = "TituloPrincipalG animate__animated animate__rotateIn">
                 <h2>TerapiAnimal</h2>
             </section>
             <nav>
                 <!--esto es una lista desordenada de navegacion-->
                 <!--hay dos tipos de enlaces_rutas: absolutas o relativas-->
-                <ul class="listaNavegacion"> 
-                <p></p>
-                    <li>
-                        <a class="linkNav" href="../index.html">Inicio</a>
+                <ul class="listaNavegacionG"> 
+                
+                    <li class="linkNavG">
+                        <a class="linkG" href="../index.html">Inicio</a>
                     </li>
-                    <li>
-                        <a class="linkNav" href="#" >Galería </a>
+                    <li class="linkNavG">
+                        <a class="linkG" href="#" >Galería </a>
                     </li>
-                    <li>
-                        <a class="linkNav" href="./terapia.html">Terapias </a>
+                    <li class="linkNavG">
+                        <a class="linkG" href="./terapia.html">Terapias </a>
                     </li>
-                    <li>
-                        <a class="linkNav" href="./nosotros.html">Nosotros </a>
+                    <li class="linkNavG">
+                        <a class="linkG" href="./nosotros.html">Nosotros </a>
                     </li>
-                    <li>
-                        <a class="linkNav" href="./contacto.html">Contacto </a>
+                    <li class="linkNavG">
+                        <a class="linkG" href="./contacto.html">Contacto </a>
                     </li>
                 </ul>
             </nav>
@@ -75,7 +80,8 @@
                         <img  href="../pages/galeria.html" src="../assets/Imagen/Perro.jpg" alt="Perro">
                     
                         <br>
-                        <section class="tipografiaGaleria">
+                        <section class="tipografiaGaleriaG">
+                            <br>
                         <p>
                         Edad: 2 años.
                         </p>
@@ -88,38 +94,34 @@
                         <br>
                         <p>
                         "Perrito" disfruta haciendo los trucos para los que ha sido entrenado y ayuda al profesional de la salud o educación a alcanzar su objetivo de mejorar las funciones físicas, emocionales, relacionales y cognitivas del paciente.</p>
-                        </p>
+                        <br>
                         </section>
                     </div>
                     <div class="miembroGato">
                     
-                        <img href="../pages/galeria.html" src="../assets/Imagen/gato.avif" alt="Gato">
+                        <img href="../pages/galeria.html" src="../assets/Imagen/diana.jpg" alt="Gato">
                     
                         <br>
-                        <section class="tipografiaGaleria">
+                        <section class="tipografiaGaleriaG">
+                        
                         <p>
-                        Edad: 5 años.
+                        Edad: 2 años.
                         </p>
                         <br>
                         <p>
                         Superpoder: Ronroneo.
                         </p>
                         <br>
-                        <p>La gatoterapia resulta muy beneficiosa en diferentes situaciones, como en la recuperación de accidentes cardiovasculares, ya que estos animales facilitan que tengamos unos niveles bajos de presión sanguínea; también reducen la ansiedad, previenen la depresión y hacen que el paciente se sienta útil y ocupado a la vez. Lo que es más, se ha utilizado gatos con resultados positivos en terapias con niños que presentan algún tipo de discapacidad o problemas en la audición y el lenguaje, así como con niños que llevan mucho tiempo hospitalizados.</p>
-                        
+                        <p>La gatoterapia resulta muy beneficiosa en diferentes situaciones, como en la recuperación de accidentes cardiovasculares, ya que estos facilitan unos niveles bajos de presión sanguínea; reducen la ansiedad, previenen la depresión y hacen que el paciente se sienta útil y ocupado a la vez. Lo que es más, se ha utilizado gatos con resultados positivos en terapias con niños que presentan algún tipo de discapacidad, problemas en la audición, lenguaje, así como con niños que llevan mucho tiempo hospitalizados.</p>
+                        <br>
                         </section>
-                    </div>
-                    <!-- <!-<p>El perro debe disfrutar con el contacto humano.
-                        Debe querer hacer actividades a cambio de un refuerzo positivo (aquello que al animal más le gusta: comida, juguetes, caricias...).
-                        Debe soportar la manipulación física sin responder de manera violenta. En las TAA las personas lo querrán tocar, acariciar y peinar por lo que es necesario que muestre una actitud tranquila.
-                        Debe tener un carácter predecible, siempre se debe saber cómo reaccionará el perro ante diferentes estímulos sensoriales. El terapeuta tiene aquí una misión fundamental ya que es necesario que realice un seguimiento detallado para conocer bien a su perro.
-                        Debe estar físicamente saludable: su bienestar es muy importante.</p> -->
-                    
+                    </div>                    
                     <div class="miembroVaca">
                         <img href="../pages/galeria.html" src="../assets/Imagen/vaca.jpg" alt="Vaca">
                     
                         <br>
-                        <section class="tipografiaGaleria">
+                        <section class="tipografiaGaleriaG">
+                            <br>
                         <p>
                         Edad: 7 años.
                         </p>
@@ -129,16 +131,19 @@
                         </p>
                         <br>
                         <p>Las vacas tienen un carácter muy amable y sosegado. Pasar un momento a su lado nos permite relajarnos y olvidar el estrés del día a día.</p>
+                        <br>
                         <p>El estrés se ha convertido en uno de los mayores problemas de salud del siglo XXI. Está relacionado, sobre todo, con el trabajo, pero también con el ritmo acelerado de vida que llevamos y con las responsabilidades del día a día (el cuidado de los hijos, el pago de las facturas, las tareas del hogar, etc.).</p>
-                        
+                        <br>
                         </section>
+                        
                     </div> 
                     <div class="miembroCarpincho">
                     
                         <img href="../pages/galeria.html" src="../assets/Imagen/carpincho.jpg" alt="Carpincho">
                     
                         <br>
-                        <section class="tipografiaGaleria">
+                        <section class="tipografiaGaleriaG">
+                            <br>
                         <p>
                         Edad: 2 años.
                         </p>
@@ -146,28 +151,28 @@
                         <p>
                         Superpoder: Te acompaña a tomar mate.
                         </p>
+                        <br>
                         <p>Compañero roedor semiacuatico, aunque le gusta mucho el agua, tambien prefiere estar en tierra y mas si hay un mate de por medio.</p>
                         <p>"Carpi" es un animal que, si se quiere tener como mascota, va a necesitar de un espacio amplio y con acceso a una piscina, lago o estanque</p>
                         <p>
                             Super amable con personas de la tercera edad, ya que comprende el pasar el tiempo a su ritmo.
                         </p>
+                        <br>
                         </section>
                     </div>
                     <div class="miembroCusco">
                     
                         <img href="../pages/galeria.html" src="../assets/Imagen/llama.jpg" alt="Llama">
                     
+                        
+                        <section class="tipografiaGaleriaG">
                         <br>
-                        <section class="tipografiaGaleria">
-                        <p>
-                        Edad: 7 años.
-                        </p>
+                        <p> Edad: 7 años. </p>
                         <br>
-                        <p>
-                        Superpoder: Vínculo.
-                        </p>
+                        <p> Superpoder: Vínculo.</p>
                         <br>
-                        <p>"Cusco" trabaja sobre el vínculo, considerando la multiplicidad de factores que entran en juego para todas las personas que se acercan, como tambien sobre el cuidado, la protección, el conocimiento, dirigiendo nuestra atención amorosa hacia él y estimulando, de modo indirecto, el aprendizaje de nuevos canales de relación también en otros ámbitos de la vida.
+                        <p>"Cusco" trabaja sobre el vínculo, considerando la multiplicidad de factores que entran en juego para todas las personas que se acercan, como tambien sobre el cuidado, la protección, el conocimiento, dirigiendo nuestra atención amorosa hacia él y estimulando, de modo indirecto, el aprendizaje de nuevos canales de relación también en otros ámbitos de la vida.</p>
+                        <br>
                     
                         </section>
                     </div>
@@ -175,17 +180,18 @@
         </main>
         <footer class="enlaces">
             <div class="iconos">
-                <a  href="https://www.facebook.com/" target="_blank" >
-                    <i class="fa-brands fa-facebook-f" width="116" hight ="116"></i>
+                <a href="https://www.instagram.com/" target="_blank" >
+                    <i class="ri-instagram-line icon" width="116" hight ="116"></i>
                 </a>
-                <a href="https://www.instagram.com/" target="_blank">
+                <a href="https://www.facebook.com/" target="_blank">
                     <!-- <img src="./assets/Imagen/socialInstagram.svg" alt="IconoInstagram" height="25"> -->
-                    <i class="fa-brands fa-instagram" alt="IconoInstagram" ></i>
+                    <i class="ri-facebook-circle-line icon" alt="IconoInstagram" ></i>
                 </a>
                 </a>
                 <a href="https://www.youtube.com/" target="_blank">
-                    <i class="fa-brands fa-youtube"></i>
+                    <i class="ri-youtube-fill icon"></i>
                 </a>
+                
             </div>
             <div class = "todoslosderechos">
             <p>Todos los derechos reservados</p>

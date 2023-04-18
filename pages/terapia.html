@@ -5,10 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- initial-scale, me indica que un px es igual para una pc como una tablet o mobile  -->
-        <title>TerapiAnimal</title>
+        <title alt="Pagina de los tipos de terapia">Tipos de terapias</title>
         <!--favicon-->
-        <link rel="shotcut icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="shotcut icon" href="./favicon.ico" type="image/x-icon" >
         <!-- BootStrap --><!--Siempre va antes de cualquier estilo-->
+        <!-- link para trabjar directo con el servidor -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- link para trabajar con archivos dentro de "nuestro servidor" -->
         <link href="./css/bootstrap.min.css" rel="stylesheet"> 
             <!--estilos-->
         <link rel="stylesheet" href="../css/estilos.css">
@@ -22,6 +25,9 @@
         <link rel="stylesheet" href="./css/v4-shims.min.css">
         <link rel="stylesheet" href="./css/v5-font-face.min.css"> -->
         <script src="https://kit.fontawesome.com/9ef6259fa0.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet"> -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
     </head>
     <body>
         <header class = "Header">
@@ -33,28 +39,28 @@
                 <!--"alt"" se usa para las personas no videntes-->
                 </a>
             </div>
-            <section class = "TituloPrincipal">
+            <section class = "TituloPrincipal animate__animated animate__zoomInDown animate__slow">
                 <h2>TerapiAnimal</h2>
             </section>
             <nav>
                 <!--esto es una lista desordenada de navegacion-->
                 <!--hay dos tipos de enlaces_rutas: absolutas o relativas-->
                 <ul class="listaNavegacion"> 
-                <p></p>
-                    <li>
-                        <a class="linkNav" href="../index.html">Inicio</a>
+                
+                    <li class="linkNav">
+                        <a class="link" href="../index.html">Inicio</a>
                     </li>
-                    <li>
-                        <a class="linkNav" href="./galeria.html" >Galería </a>
+                    <li class="linkNav">
+                        <a class="link" href="./galeria.html" >Galería </a>
                     </li>
-                    <li>
-                        <a class="linkNav" href="#">Terapias </a>
+                    <li class="linkNav">
+                        <a class="link" href="#">Terapias </a>
                     </li>
-                    <li>
-                        <a class="linkNav" href="./nosotros.html">Nosotros </a>
+                    <li class="linkNav">
+                        <a class="link" href="./nosotros.html">Nosotros </a>
                     </li>
-                    <li>
-                        <a class="linkNav" href="./contacto.html">Contacto </a>
+                    <li class="linkNav">
+                        <a class="link" href="./contacto.html">Contacto </a>
                     </li>
                 </ul>
             </nav>
@@ -103,25 +109,25 @@
             </section>
         </main>
         
-        <footer class="container-fluid border border-5 enlaces">
+        <footer class="enlaces">
             <div class="iconos">
-                <a  href="https://www.facebook.com/" target="_blank" >
-                    <i class="fa-brands fa-facebook-f" width="116" hight ="116"></i>
+                <a href="https://www.instagram.com/" target="_blank" >
+                    <i class="ri-instagram-line icon" width="116" hight ="116"></i>
                 </a>
-                <a href="https://www.instagram.com/" target="_blank">
+                <a href="https://www.facebook.com/" target="_blank">
                     <!-- <img src="./assets/Imagen/socialInstagram.svg" alt="IconoInstagram" height="25"> -->
-                    <i class="fa-brands fa-instagram" alt="IconoInstagram" ></i>
+                    <i class="ri-facebook-circle-line icon" alt="IconoInstagram" ></i>
                 </a>
                 </a>
                 <a href="https://www.youtube.com/" target="_blank">
-                    <i class="fa-brands fa-youtube"></i>
+                    <i class="ri-youtube-fill icon"></i>
                 </a>
-            
+                
             </div>
             <div class = "todoslosderechos">
             <p>Todos los derechos reservados</p>
             </div>
-            </footer>
+        </footer>
             <!-- JavaScrip de bs --><!--Siempre va despues del footer-->
             <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
             <script src="./js/bootstrap.bundle.min.js"></script>
