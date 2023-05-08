@@ -1,0 +1,90 @@
+.HeaderTerapia{
+    background-color: map-get($colores,color-headergeneral);
+    height: 6.8vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    /*position: sticky;
+    top: 0px;*/ /* display: flex no me funciono hasta que coloque el top */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border-radius: $borde-10px;
+    -webkit-border-radius: $borde-10px;
+    -moz-border-radius: $borde-10px;
+
+    .logoPerritoTerapia{
+        border-radius: $borde-10px;
+        -webkit-border-radius: $borde-10px;
+        -moz-border-radius: $borde-10px;
+        // margin: 0 auto;
+        height: 6.9vh;
+        width: 100%;
+    }
+    
+
+    .TituloPrincipalTerapia{
+        background-color: none;
+        font-family: $tipografia-glock;
+        // font-size: 10px;
+        // height: 100%;
+        // width: 20%;
+        // justify-content: center;
+        // align-items:center;
+        // align-content:center;  
+    }
+    .listaNavegacionTerapia{
+        // width: 20vw;
+        display: flex;
+        flex-direction: row;
+        // flex-wrap: nowrap;
+        align-items: center;
+        align-content: center; 
+        justify-content: right; 
+        list-style: none;
+        // margin: 10rem;
+        text-decoration: none;
+        height: auto;
+        
+    
+        .linkNavTerapia{
+            display: block;
+            justify-content:left;
+            color: black;
+            // text-decoration: none;
+            font-size: 22px;
+            margin-right: 10px;
+            // width: 40%;
+            
+    
+            .linkTerapia{
+                display: inline-block;
+                margin-block: 2px;
+                text-decoration: none;
+                color:#030303;
+                position: relative;
+                margin-top:10px;
+                font-size: 1.5rem;
+            }
+            .link::after{
+                content: '';
+                width: 100%;
+                height:1px;
+                // background-color: #fff;
+                border-radius:4px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                transform:scaleX(0);
+                transform-origin: left;
+                transition: transform .25s ease;
+            }
+            .link:hover::after{
+                transform:scaleX(1);
+            }
+        }
+        
+    }
+}

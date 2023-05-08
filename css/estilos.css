@@ -313,6 +313,7 @@
   display: block;
   justify-content: left;
   color: black;
+  font-size: 18px;
   margin-right: 12px;
 }
 .GaleriaGrid .HeaderGaleria .listaNavegacionG .linkNavG .linkG {
@@ -782,13 +783,17 @@
   /*animaciones para redes sociales*/
   position: relative;
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 15px;
+  justify-content: center;
+  margin: 10px auto;
+  font-size: 30px;
 }
 .enlaces .iconos .icon {
-  display: inline-block; /*Makes the icons inline block level elements. This will let us animate the transform property.*/
+  display: inline-flex; /*Makes the icons inline block level elements. This will let us animate the transform property.*/
   font-size: 44px;
   animation: float infinite 4s ease-in-out;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  font-size: 60px;
   /*Applies the float keyframe animation over 5s and makes it run infinitely.*/
   /*  
   animation-name: float;
@@ -816,7 +821,7 @@
   content: "";
   position: absolute;
   width: 100%;
-  height: 5px;
+  height: 3px;
   background-color: rgb(37, 37, 37);
   border-radius: 10px;
   left: 50%;
@@ -959,6 +964,76 @@
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
+}
+
+.HeaderTerapia {
+  background-color: var(--background-navy-color, #0259a1);
+  height: 6.8vh;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  /*position: sticky;
+  top: 0px;*/ /* display: flex no me funciono hasta que coloque el top */
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+}
+.HeaderTerapia .logoPerritoTerapia {
+  border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  height: 6.9vh;
+  width: 100%;
+}
+.HeaderTerapia .TituloPrincipalTerapia {
+  background-color: none;
+  font-family: "Gloock-Regular";
+}
+.HeaderTerapia .listaNavegacionTerapia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: right;
+  list-style: none;
+  text-decoration: none;
+  height: auto;
+}
+.HeaderTerapia .listaNavegacionTerapia .linkNavTerapia {
+  display: block;
+  justify-content: left;
+  color: black;
+  font-size: 22px;
+  margin-right: 10px;
+}
+.HeaderTerapia .listaNavegacionTerapia .linkNavTerapia .linkTerapia {
+  display: inline-block;
+  margin-block: 2px;
+  text-decoration: none;
+  color: #030303;
+  position: relative;
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+.HeaderTerapia .listaNavegacionTerapia .linkNavTerapia .link::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+.HeaderTerapia .listaNavegacionTerapia .linkNavTerapia .link:hover::after {
+  transform: scaleX(1);
 }
 
 /*# sourceMappingURL=estilos.css.map */

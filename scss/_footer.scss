@@ -23,12 +23,16 @@
         // .icons-wrapper{
         position: relative;
         display:flex;
-        justify-content: space-evenly;
-        margin-top:15px;
+        justify-content: center;
+        margin: 10px auto;
+        font-size: 30px;
         .icon{
-            display: inline-block; /*Makes the icons inline block level elements. This will let us animate the transform property.*/ 
+            display:inline-flex; /*Makes the icons inline block level elements. This will let us animate the transform property.*/ 
             font-size: 44px;
             animation: float infinite 4s ease-in-out ; 
+            margin-left: 2.5rem;
+            margin-right: 2.5rem;
+            font-size: 60px;
             /*Applies the float keyframe animation over 5s and makes it run infinitely.*/
             /*  
             animation-name: float;
@@ -58,7 +62,7 @@
         content: '';
         position: absolute;
         width: 100%;
-        height: 5px;
+        height: 3px;
         background-color: rgb(37, 37, 37);
         border-radius: 10px;
         left: 50%;
