@@ -25,10 +25,23 @@
     .TituloPrincipal{
         background-color: none;
         font-family: $tipografia-glock;
-        font-size: 50px;
+        font-size: 40px;
+    }
+    
+    .button{
+        display: none;
+        // justify-content: flex-end;
+        // background-color: map-get($colores,color-headergeneral);
+        .svg{
+            width: 2.25rem;
+            height: 2.25rem;
+            background-color: map-get($colores,color-headergeneral);
+
+            // display: block;
+        }
     }
     .listaNavegacion{
-        width: 19vw;
+        // width: 19vw;
         display: flex;
         flex-direction: row;
         // flex-wrap: nowrap;
@@ -44,7 +57,7 @@
             display: block;
             justify-content:left;
             color: black;
-            // text-decoration: none;
+            text-decoration: none;
             font-size: 22px;
             margin-right: 10px;
             
@@ -76,5 +89,105 @@
             }
         }
         
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Header{
+        height: auto;
+        color:white;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        .logoPerrito{
+            width: auto;
+            height: 10.8vh;
+        }
+            
+        .TituloPrincipal{
+            background-color: none;
+            font-family: $tipografia-glock;
+            font-size: 50px;
+        }
+        
+        .button{
+            display: block;
+            cursor: pointer;
+            margin-right: 1rem;
+            fill: black;
+            border-radius: $borde-10px;
+            -webkit-border-radius: $borde-10px;
+            -moz-border-radius: $borde-10px;
+        }
+        
+        .nav{
+            width: 100%;
+            display: none;
+        }
+        .nav.activo{
+            display: block;
+            
+        }
+        .listaNavegacion{
+            flex-direction: column;
+            display: flex;
+            // flex-flow: row nowrap;
+            justify-content: flex-end;
+            align-items: center;
+            .linkNav{
+                margin: .5rem 0;
+            }
+        }
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1300px) {
+    .Header{
+        height: auto;
+        color:white;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        .logoPerrito{
+            width: auto;
+            height: 10.8vh;
+        }
+            
+        .TituloPrincipal{
+            background-color: none;
+            font-family: $tipografia-glock;
+            font-size: 50px;
+        }
+        
+        .button{
+            display: block;
+            cursor: pointer;
+            margin-right: 1rem;
+            fill: black;
+            border-radius: $borde-10px;
+            -webkit-border-radius: $borde-10px;
+            -moz-border-radius: $borde-10px;
+        }
+        
+        .nav{
+            width: 100%;
+            display: none;
+        }
+        .nav.activo{
+            display: block;
+            
+        }
+        .listaNavegacion{
+            flex-direction: column;
+            display: flex;
+            // flex-flow: row nowrap;
+            justify-content: flex-end;
+            align-items: center;
+            .linkNav{
+                margin: .5rem 0;
+            }
+        }
     }
 }
